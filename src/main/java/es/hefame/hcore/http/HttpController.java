@@ -110,7 +110,7 @@ public abstract class HttpController implements HttpHandler {
 				default:
 					exchange.response.send(new HttpException(405, METHOD_NOT_ALLOWED));
 			}
-		} catch (HttpException he) {
+		} catch (HException he) {
 			try {
 				exchange.response.send(he);
 			} catch (IOException ioe) {
