@@ -19,5 +19,5 @@ public interface JsonEncodable {
 	 * 
 	 * @return Una representación del objeto actual en un objeto JSONAware.
 	 */
-	public JSONAware json_encode();
+	public JSONAware jsonEncode();
 }

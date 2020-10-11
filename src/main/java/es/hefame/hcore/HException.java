@@ -148,7 +148,7 @@ public class HException extends Exception implements JsonEncodable {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public JSONAware json_encode() {
+	public JSONAware jsonEncode() {
 		JSONObject root = new JSONObject();
 		root.put("code", this.getCode());
 		root.put("message", this.getMessage());
@@ -157,7 +157,7 @@ public class HException extends Exception implements JsonEncodable {
 
 	@Override
 	public String toString() {
-		return this.json_encode().toJSONString();
+		return this.jsonEncode().toJSONString();
 	}
 
 }
