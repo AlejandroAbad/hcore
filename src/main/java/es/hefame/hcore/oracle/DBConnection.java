@@ -75,7 +75,7 @@ public class DBConnection {
 		if (connection != null) {
 			try {
 				return connection.isValid(1);
-			} catch (SQLException e) {
+			} catch (Exception e) {
 
 			}
 		}
